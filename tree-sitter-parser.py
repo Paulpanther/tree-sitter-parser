@@ -18,7 +18,9 @@ Language.build_library(
   script_dir + '/build/languages.so',
   [
     script_dir + '/tree-sitter-c',
+    script_dir + '/tree-sitter-smalltalk',
     script_dir + '/tree-sitter-java',
+    script_dir + '/tree-sitter-kotlin',
     script_dir + '/tree-sitter-javascript',
     script_dir + '/tree-sitter-r',
     script_dir + '/tree-sitter-ocaml/ocaml',
@@ -31,7 +33,9 @@ Language.build_library(
 
 PARSERS = {
   "c": Language(script_dir + '/build/languages.so', 'c'),
+  "smalltalk": Language(script_dir + '/build/languages.so', 'smalltalk'),
   "java": Language(script_dir + '/build/languages.so', 'java'),
+  "kotlin": Language(script_dir + '/build/languages.so', 'kotlin'),
   "javascript": Language(script_dir + '/build/languages.so', 'javascript'),
   "ocaml": Language(script_dir + '/build/languages.so', 'ocaml'),
   "php": Language(script_dir + '/build/languages.so', 'php'),
